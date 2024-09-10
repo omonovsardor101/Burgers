@@ -14,18 +14,19 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.min.css">
     <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/739d9e9ea8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header-wrapper">
                 <a href="#" class="logo"></a>
                 <nav class="nav">
                     <a href="#" class="nav-link">Главная</a>
-                    <a href="#" class="nav-link">Меню</a>
+                    <a href="index.html" class="nav-link">Меню</a>
                     <a href="#" class="nav-link">О нас</a>
-                    <a href="#" class="nav-link">Контакты</a>
+                    <a href="contact.html" class="nav-link">Контакты</a>
                 </nav>
                 <a href="#" class="cart">$125 <span class="cart-count">5</span></a>
             </div>
@@ -52,12 +53,12 @@
                     Только при&nbsp;покупке 3-х и более позиций,
                     мы дарим скидку. Акции не&nbsp;суммируются.
                 </p>
-                <button type="button" class="banner-btn">купить сейчас</button>
+                <a href="#menu" class="banner-btn">купить сейчас</a>
             </div>
         </div>
     </section>
 
-    <section class="menu">
+    <section class="menu" id="menu">
         <div class="container">
             <div class="menu-wrapper">
                 <div class="menu-header">
@@ -165,10 +166,10 @@
                 <div class="footer-item">
                     <div class="footer-title">Основные ссылки</div>
                     <nav class="footer-nav">
-                        <a href="#">Меню</a>
+                        <a href="index.html">Меню</a>
                         <a href="#">Заказ и Доставка</a>
                         <a href="#">Методы оплаты</a>
-                        <a href="#">Контакты</a>
+                        <a href="contact.html">Контакты</a>
                     </nav>
                 </div>
                 <div class="footer-item">
@@ -192,6 +193,10 @@
             </div>
         </div>
     </footer>
+
+    <a href="#header" class="button-up hidden" id="btnUp"><i class="fa-solid fa-chevron-up"></i></a>
+
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
