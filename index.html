@@ -21,6 +21,7 @@
     <header class="header" id="header">
         <div class="container">
             <div class="header-wrapper">
+                <button class="burger-menu" onclick="openModal()"></button>
                 <a href="#" class="logo"></a>
                 <nav class="nav">
                     <a href="#" class="nav-link">Главная</a>
@@ -128,32 +129,38 @@
             </div>
 
             <h2 class="menu-title additionally">Дополнительно</h2>
-            <div class="menu-box">
-                <div class="menu-item">
+            <div class="menu-box _additionally">
+                <div class="menu-item _additionally">
                     <div class="menu-thumb">
                         <img src="images/menu/01-additionally.jpg" alt="Сэндвич">
                     </div>
-                    <h3 class="menu-name">Сэндвич</h3>
-                    <p class="menu-price">$3</p>
-                    <button type="button" class="menu-btn">Купить</button>
+                    <div class="menu-info">
+                        <h3 class="menu-name">Сэндвич</h3>
+                        <p class="menu-price">$3</p>
+                        <button type="button" class="menu-btn">Купить</button>
+                    </div>
                 </div>
 
-                <div class="menu-item">
+                <div class="menu-item _additionally">
                     <div class="menu-thumb">
                         <img src="images/menu/02-additionally.jpg" alt="Картошка Фри">
                     </div>
-                    <h3 class="menu-name">Картошка Фри</h3>
-                    <p class="menu-price">$5</p>
-                    <button type="button" class="menu-btn">Купить</button>
+                    <div class="menu-info">
+                        <h3 class="menu-name">Картошка Фри</h3>
+                        <p class="menu-price">$5</p>
+                        <button type="button" class="menu-btn">Купить</button>
+                    </div>
                 </div>
 
-                <div class="menu-item">
+                <div class="menu-item _additionally">
                     <div class="menu-thumb">
                         <img src="images/menu/03-additionally.jpg" alt="Хот-Дог">
                     </div>
-                    <h3 class="menu-name">Хот-Дог</h3>
-                    <p class="menu-price">$7</p>
-                    <button type="button" class="menu-btn">Купить</button>
+                    <div class="menu-info">
+                        <h3 class="menu-name">Хот-Дог</h3>
+                        <p class="menu-price">$7</p>
+                        <button type="button" class="menu-btn">Купить</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -171,6 +178,8 @@
                         <a href="#">Методы оплаты</a>
                         <a href="contact.html">Контакты</a>
                     </nav>
+                    <a class="footer-tel _mobile" href="tel:+79007871313">+&nbsp;7&nbsp;900&nbsp;787&nbsp;13-13</a>
+                    <a class="footer-tel _mobile" href="tel:+79007001414">+&nbsp;7&nbsp;900&nbsp;700&nbsp;14-14</a>
                 </div>
                 <div class="footer-item">
                     <div class="footer-title">Основная информация</div>
@@ -195,6 +204,15 @@
     </footer>
 
     <a href="#header" class="button-up hidden" id="btnUp"><i class="fa-solid fa-chevron-up"></i></a>
+    <div class="modal" id="modal">
+        <nav class="nav _modal">
+            <a href="#" class="nav-link">Главная</a>
+            <a href="index.html" class="nav-link">Меню</a>
+            <a href="#" class="nav-link">О нас</a>
+            <a href="contact.html" class="nav-link">Контакты</a>
+        </nav>
+        <button class="modal-close" onclick="closeModal()"></button>
+    </div>
 
     <script src="scripts/script.js"></script>
 </body>
