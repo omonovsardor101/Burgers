@@ -6,4 +6,4 @@
 - a little JavaScript code
 - responsive
 
-**[Demo: ](https://omonovsardor101.github.io/Burgers/index.html).**
+**[View Demo](https://omonovsardor101.github.io/Burgers/index.html)**
